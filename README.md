@@ -30,6 +30,12 @@ If your use case is purely personal exploration, learning, or open-source contri
 
 ---
 
+## How this was built
+
+This repository was scaffolded and iterated on with the help of an AI coding assistant (Anthropic's Claude, via GitHub Copilot's agent mode in VS Code). The design decisions, dependency choices, licensing posture, and architectural trade-offs were driven by the author; the assistant contributed code generation, test scaffolding, and documentation drafting under human review. All committed code has been read and vetted by a human before landing.
+
+---
+
 ## Features
 
 The server exposes 10 read-only tools that cover the common "explore this spreadsheet" workflow:
