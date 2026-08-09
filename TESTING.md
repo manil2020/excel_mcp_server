@@ -5,7 +5,7 @@ Step-by-step guide for hooking the server up to VS Code or Claude Desktop and dr
 ## 1. Prerequisites
 
 ```bash
-cd /Users/akumarmarati/Desktop/manil2020/excel_mcp_server
+cd <path-to-repo>/excel_mcp_server
 
 npm install
 npm run build          # writes dist/index.js (executable)
@@ -57,10 +57,10 @@ Add this to `.vscode/mcp.json` in whatever workspace you want to chat from (or u
   "servers": {
     "excel": {
       "command": "node",
-      "args": ["/Users/akumarmarati/Desktop/manil2020/excel_mcp_server/dist/index.js"],
+      "args": ["<path-to-repo>/excel_mcp_server/dist/index.js"],
       "env": {
         "EXCEL_MCP_LOG_LEVEL": "info",
-        "EXCEL_MCP_ALLOWED_ROOTS": "/Users/akumarmarati/Desktop/manil2020/excel_mcp_server/samples:/Users/akumarmarati/Desktop"
+        "EXCEL_MCP_ALLOWED_ROOTS": "<path-to-repo>/excel_mcp_server/samples:~/Desktop"
       }
     }
   }
@@ -80,10 +80,10 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
   "mcpServers": {
     "excel": {
       "command": "node",
-      "args": ["/Users/akumarmarati/Desktop/manil2020/excel_mcp_server/dist/index.js"],
+      "args": ["<path-to-repo>/excel_mcp_server/dist/index.js"],
       "env": {
         "EXCEL_MCP_LOG_LEVEL": "info",
-        "EXCEL_MCP_ALLOWED_ROOTS": "/Users/akumarmarati/Desktop/manil2020/excel_mcp_server/samples"
+        "EXCEL_MCP_ALLOWED_ROOTS": "<path-to-repo>/excel_mcp_server/samples"
       }
     }
   }
@@ -97,7 +97,7 @@ Quit and restart Claude Desktop. The tools appear under the hammer icon.
 Paste these into your MCP client to exercise different features.
 
 ### Basics
-> Open `/Users/akumarmarati/Desktop/manil2020/excel_mcp_server/samples/financial-sample.xlsx`, list the sheets, and give me a summary of the first sheet including headers and column types.
+> Open `<path-to-repo>/excel_mcp_server/samples/financial-sample.xlsx`, list the sheets, and give me a summary of the first sheet including headers and column types.
 
 ### Cross-sheet formulas
 > Open `samples/finance-quarterly.xlsx`. What was the full-year revenue, cost, and profit margin? Which quarter had the highest margin, and by how much?
@@ -130,7 +130,7 @@ Paste these into your MCP client to exercise different features.
 
 **Client hangs on startup** — verify the built binary runs manually:
 ```bash
-node /Users/akumarmarati/Desktop/manil2020/excel_mcp_server/dist/index.js
+node <path-to-repo>/excel_mcp_server/dist/index.js
 # then in another terminal, kill it: Ctrl+C
 ```
 If nothing prints to stderr, `npm run build` has not been run.
