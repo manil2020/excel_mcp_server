@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "excel": {
+      "command": "node",
+      "args": ["${workspaceFolder}/dist/index.js"],
+      "env": {
+        "EXCEL_MCP_LOG_LEVEL": "info",
+        "EXCEL_MCP_MAX_FILE_MB": "100"
+      }
+    }
+  }
+}

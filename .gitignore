@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+*.log
+.env
+.env.local
+.vscode/
+!.vscode/settings.json.example
+tmp/
+*.tsbuildinfo
+samples/*.xlsx
+!samples/.gitkeep

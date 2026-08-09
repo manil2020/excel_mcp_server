@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "excel": {
+      "command": "node",
+      "args": ["/absolute/path/to/excel_mcp_server/dist/index.js"],
+      "env": {
+        "EXCEL_MCP_LOG_LEVEL": "info",
+        "EXCEL_MCP_ALLOWED_ROOTS": "/Users/you/Documents:/Users/you/Downloads"
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# placeholder so the samples/ directory is tracked
+# actual .xlsx files are gitignored; regenerate them with:
+#   npx tsx scripts/generate-samples.ts

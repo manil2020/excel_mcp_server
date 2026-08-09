@@ -1,0 +1,42 @@
+excel-mcp-server
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version. See LICENSE for the full text.
+
+---------------------------------------------------------------------------
+Intended use
+---------------------------------------------------------------------------
+
+THIS REPOSITORY IS A PERSONAL / EDUCATIONAL PROOF-OF-CONCEPT. It is NOT
+intended to be bundled inside a commercial software product, deployed as
+part of a paid SaaS offering, or otherwise distributed as part of a
+for-profit service without first obtaining the appropriate third-party
+licenses (see the HyperFormula note below).
+
+If your use case is personal exploration, learning, or contribution back
+to a GPL-3.0-or-later open-source project, you are welcome to use, fork,
+and modify this code freely under the terms of GPL-3.0.
+
+---------------------------------------------------------------------------
+Third-party dependencies and their licenses
+---------------------------------------------------------------------------
+
+This project links against the following runtime dependencies:
+
+  * HyperFormula (https://github.com/handsontable/hyperformula)
+      Dual-licensed under GPL-3.0 or a commercial license from Handsontable.
+      Because this project is distributed under GPL-3.0-or-later, we use
+      HyperFormula's open-source license and pass `licenseKey: "gpl-v3"` at
+      engine construction (see src/workbook/loader.ts). If you fork this
+      project into proprietary software, you MUST obtain a commercial
+      HyperFormula license and replace the license key accordingly.
+
+  * ExcelJS (https://github.com/exceljs/exceljs) - MIT License
+  * @modelcontextprotocol/sdk (https://github.com/modelcontextprotocol/typescript-sdk) - MIT License
+  * zod (https://github.com/colinhacks/zod) - MIT License
+
+MIT-licensed dependencies are compatible with GPL-3.0 and impose no
+additional restrictions on downstream users of this project beyond those
+already required by GPL-3.0.
