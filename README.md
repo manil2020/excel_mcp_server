@@ -253,7 +253,7 @@ The **Model Context Protocol** specification is developed and stewarded by [Anth
 - The `samples/financial-sample.xlsx` fixture (used for local testing only, gitignored) is **Microsoft's public Power BI Financial Sample workbook**, freely distributed by Microsoft for learning purposes: [download link](https://go.microsoft.com/fwlink/?LinkID=521962).
 - All other files in `samples/` are synthesised locally by [scripts/generate-samples.ts](scripts/generate-samples.ts) and contain no real personal or commercial data.
 
-If any maintainer name or attribution detail here is missing or wrong, please open an issue — corrections are welcome and I want the credit right.
+If any maintainer name or attribution detail here is missing or wrong, please open an issue — corrections are welcome.
 
 ---
 
